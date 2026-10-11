@@ -69,3 +69,5 @@ WebDev-L1-LandingPage/
 - Fonts: [Google Fonts - Poppins](https://fonts.google.com/specimen/Poppins)
 - Images: [Unsplash](https://unsplash.com) and a hero background image
 - All names, prices, email and phone number on the page are placeholders for this task.
+
+
