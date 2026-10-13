@@ -37,7 +37,7 @@ https://nehakhatrii312.github.io/OIBSIP/WebDev-L1-Portfolio/
 
 ## Project Structure
 ```
-WebDev-L1-Portfolio/
+WebDev-L1-Task 2-Portfolio/
 ├── index.html
 ├── (profile photo)
 ├── README.md
