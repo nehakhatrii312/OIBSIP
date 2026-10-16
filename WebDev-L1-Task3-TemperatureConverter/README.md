@@ -51,7 +51,9 @@ WebDev-L1-Task3-TemperatureConverter/
 ├── style.css
 ├── script.js
 ├── README.md
-└── screenshot.png
+├── screenshot.png
+├── screenshot2.png
+└── screenshot3.png
 ```
 
 > **Note:** Rename `temp_converter.html` to `index.html` if you want to use the default GitHub Pages entry filename. Otherwise, keep the existing filename and use the corresponding URL when testing the page.
