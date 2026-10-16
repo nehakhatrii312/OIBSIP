@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Convert temperatures between Celsius, Fahrenheit, and Kelvin.">
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <header class="card__header">
+      <h1>Temperature Converter</h1>
+      <p class="card__subtitle">Celsius, Fahrenheit and Kelvin in one place.</p>
+    </header>
+
+    <!-- novalidate: validation is handled by script.js for consistent inline messages -->
+    <form id="converter-form" novalidate>
+      <!-- Temperature value -->
+      <div class="field">
+        <label for="temperature-input">Temperature value</label>
+        <input
+          type="text"
+          id="temperature-input"
+          inputmode="decimal"
+          autocomplete="off"
+          placeholder="e.g. 36.6 or -40"
+          aria-describedby="error-message"
+          aria-invalid="false"
+        >
+      </div>
+
+      <!-- Input unit -->
+      <div class="field">
+        <label for="unit-select">Convert from</label>
+        <select id="unit-select">
+          <option value="C" selected>Celsius (°C)</option>
+          <option value="F">Fahrenheit (°F)</option>
+          <option value="K">Kelvin (K)</option>
+        </select>
+      </div>
+
+      <!-- Inline error (announced to screen readers) -->
+      <p id="error-message" class="error" role="alert" aria-live="assertive" hidden></p>
+
+      <!-- Actions -->
+      <div class="actions">
+        <button type="submit" class="btn btn--primary">Convert</button>
+        <button type="button" id="reset-button" class="btn btn--secondary">Reset</button>
+      </div>
+    </form>
+
+    <!-- Results (announced politely to screen readers) -->
+    <section id="results" class="results" aria-live="polite" aria-label="Conversion results" hidden>
+      <h2 class="results__title">Results</h2>
+      <ul class="results__list">
+        <li class="result" data-unit="C">
+          <span class="result__label">Celsius</span>
+          <span class="result__value" id="result-C"></span>
+        </li>
+        <li class="result" data-unit="F">
+          <span class="result__label">Fahrenheit</span>
+          <span class="result__value" id="result-F"></span>
+        </li>
+        <li class="result" data-unit="K">
+          <span class="result__label">Kelvin</span>
+          <span class="result__value" id="result-K"></span>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
